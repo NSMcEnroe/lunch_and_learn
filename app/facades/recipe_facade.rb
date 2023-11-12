@@ -1,14 +1,25 @@
 class RecipeFacade
   attr_reader :country
-  def initialize(country = nil)
+  def initialize(country)
     @country = country.downcase
   end
 
   def searched_recipes
-    data = RecipeService.new.recipes_by_country(@country)
+    if @country == "random"
+      random_country = CountryService.new.random_country.sample[:name][:common].downcase
 
-    data[:hits].map do |recipe_data|
-      Recipe.new(recipe_data, @country)
+      require 'pry';binding.pry
+      data = RecipeService.new.recipes_by_country(country)
+
+      data[:hits].map do |recipe_data|
+        Recipe.new(recipe_data, country)
+      end
+    else
+      data = RecipeService.new.recipes_by_country(@country)
+
+      data[:hits].map do |recipe_data|
+        Recipe.new(recipe_data, @country)
+      end
     end
   end
 end
