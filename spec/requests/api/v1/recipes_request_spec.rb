@@ -14,10 +14,10 @@ RSpec.describe "Search for Recipes", type: :request do
 
     recipes.each do |recipe|
       expect(recipe).to have_key(:id)
-      expect(recipe[:id]).to eq(null)
+      expect(recipe[:id]).to eq(nil)
 
       expect(recipe).to have_key(:type)
-      expect(recipe[:id]).to eq("recipe")
+      expect(recipe[:type]).to eq("recipe")
 
       expect(recipe).to have_key(:attributes)
       expect(recipe[:attributes][:title]).to be_a(String)
@@ -26,3 +26,4 @@ RSpec.describe "Search for Recipes", type: :request do
       expect(recipe[:attributes][:image]).to be_a(String)
     end
   end
+end
