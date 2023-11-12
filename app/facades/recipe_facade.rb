@@ -8,7 +8,6 @@ class RecipeFacade
     if @country == "random"
       random_country = CountryService.new.random_country.sample[:name][:common].downcase
 
-      require 'pry';binding.pry
       data = RecipeService.new.recipes_by_country(country)
 
       data[:hits].map do |recipe_data|

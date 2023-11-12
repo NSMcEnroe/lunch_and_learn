@@ -52,4 +52,32 @@ RSpec.describe "Search for Recipes", type: :request do
       expect(recipe[:attributes][:image]).to be_a(String)
     end
   end
+
+  it "should return a specific hash if the string is empty", :vcr do
+    user_search = ""
+
+    get "/api/v1/recipes?country=#{user_search}"
+
+    expect(response).to be_successful
+
+    recipes_data = JSON.parse(response.body, symbolize_names: true)
+
+    recipes = recipes_data[:data]
+
+    expect(recipes).to eq([])
+  end
+
+  it "should return a specific hash if the country has no associated recipes", :vcr do
+    user_search = "Deseret"
+
+    get "/api/v1/recipes?country=#{user_search}"
+
+    expect(response).to be_successful
+
+    recipes_data = JSON.parse(response.body, symbolize_names: true)
+
+    recipes = recipes_data[:data]
+
+    expect(recipes).to eq([])
+  end
 end
