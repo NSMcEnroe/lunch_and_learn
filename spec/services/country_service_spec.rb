@@ -4,6 +4,8 @@ describe CountryService do
   context "class methods" do
     context "#recipes_by_country" do
       xit "returns recipes related to the country", :vcr do
+        #Works, but VCR needs to be re-started each time
+        #Lol, its random, thats why
         random_country = CountryService.new.random_country.sample[:name][:common].downcase
 
         expect(random_country).to be_a(String)

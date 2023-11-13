@@ -13,6 +13,7 @@ class CountryService
   end
 
   def get_country_coordinates(country)
-    get_url("https://restcountries.com/v3.1/name/#{country}")
+    without_spaces_country = country.gsub(" ", "%20")
+    get_url("v3.1/name/#{without_spaces_country}")
   end
 end
