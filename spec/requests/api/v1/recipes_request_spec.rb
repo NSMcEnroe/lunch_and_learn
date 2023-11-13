@@ -24,6 +24,11 @@ RSpec.describe "Search for Recipes", type: :request do
       expect(recipe[:attributes][:url]).to be_a(String)
       expect(recipe[:attributes][:country]).to be_a(String)
       expect(recipe[:attributes][:image]).to be_a(String)
+
+      expect(recipe[:attributes]).to_not have_key :yield
+      expect(recipe[:attributes]).to_not have_key :ingredients
+      expect(recipe[:attributes]).to_not have_key :images
+      
     end
   end
 
@@ -50,6 +55,10 @@ RSpec.describe "Search for Recipes", type: :request do
       expect(recipe[:attributes][:url]).to be_a(String)
       expect(recipe[:attributes][:country]).to be_a(String)
       expect(recipe[:attributes][:image]).to be_a(String)
+
+      expect(recipe[:attributes]).to_not have_key :yield
+      expect(recipe[:attributes]).to_not have_key :ingredients
+      expect(recipe[:attributes]).to_not have_key :images
     end
   end
 
