@@ -11,4 +11,8 @@ class CountryService
   def random_country
     get_url("/v3.1/all")
   end
+
+  def get_country_coordinates(country)
+    get_url("https://restcountries.com/v3.1/name/#{country}")
+  end
 end
