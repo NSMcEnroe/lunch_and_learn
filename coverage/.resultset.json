@@ -190,6 +190,41 @@
           null
         ]
       },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/facades/learning_resources_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/facades/recipe_facade_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/facades/recipe_facade.rb": {
         "lines": [
           1,
@@ -220,7 +255,68 @@
       },
       "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/poros/learning_resource_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/poros/learning_resource.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          4,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          22,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          4,
+          1,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null
         ]
       },
       "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/poros/recipe_spec.rb": {
@@ -480,6 +576,50 @@
           null
         ]
       },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/services/picture_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/services/picture_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
       "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/services/recipe_service_spec.rb": {
         "lines": [
           1,
@@ -531,6 +671,52 @@
           null
         ]
       },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/services/video_service_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/services/video_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
       "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
         "lines": [
           1,
@@ -545,102 +731,6 @@
       "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/facades/learning_resources_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/services/video_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/services/picture_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/poros/learning_resource.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          0,
-          null,
-          2,
-          10,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          2,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -676,6 +766,6 @@
         ]
       }
     },
-    "timestamp": 1699979699
+    "timestamp": 1699981944
   }
 }

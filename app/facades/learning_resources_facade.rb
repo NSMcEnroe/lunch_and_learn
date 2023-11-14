@@ -4,7 +4,7 @@ class LearningResourcesFacade
     @country = country
   end
 
-  def selected_video_resource
+  def selected_resources
     video_data = VideoService.new.video_by_country(@country)
     pictures_data = PictureService.new.pictures_by_country(@country)
 

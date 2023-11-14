@@ -1,0 +1,183 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyDUtELRkTKSwVkdd6fMLEJC_Zh-VdxojBg&maxResults=1&part=snippet&q=Fiji&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 14 Nov 2023 16:40:16 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "j5KRMqG_ufvKTX9j_0xIAXBjuz8",
+          "nextPageToken": "CAEQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 28,
+            "resultsPerPage": 1
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "tH4OQ5GYphxw5DU9fQnn7E5VIjU",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "6P8mZ-1FHI4"
+              },
+              "snippet": {
+                "publishedAt": "2020-06-18T00:27:03Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Fiji",
+                "description": "Pictures requiring attribution: Patrick Nunn: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/6P8mZ-1FHI4/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/6P8mZ-1FHI4/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/6P8mZ-1FHI4/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-06-18T00:27:03Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Tue, 14 Nov 2023 16:40:16 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=10&query=Fiji
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - B3WRVfuZIH7gShoGi2mkybY76SPK1SntbCwalCsOlMW6vbKKi25dBexn
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 14 Nov 2023 16:40:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8260b2018b0051a0-DEN
+      Cf-Cache-Status:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=86400
+      Etag:
+      - W/"8c77981ffbef8c17d58f56b3b3894cc1"
+      Expires:
+      - Wed, 15 Nov 2023 16:40:17 GMT
+      Access-Control-Allow-Headers:
+      - Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, User-Agent
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '25000'
+      X-Ratelimit-Remaining:
+      - '24996'
+      X-Ratelimit-Reset:
+      - '1702564605'
+      X-Request-Id:
+      - 3391f917-85d1-42b0-a8a0-ecfe7d610476
+      X-Runtime:
+      - '0.106616'
+      X-Server:
+      - caterpillar
+      Set-Cookie:
+      - __cf_bm=lO2jNIdQvAngtnXl1rAJrMNbTpfMkVfQHrKSRSPsR14-1699980017-0-AfwsAvujyiAD6uivppqRu3BHUJu7bnK1gDdBhSUdoUTkoNqzK+TF9DrQXFIDUelyMtuH8DGMDDJgzb2gCWEdIMo=;
+        path=/; expires=Tue, 14-Nov-23 17:10:17 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":10,"photos":[{"id":1752461,"width":3966,"height":2976,"url":"https://www.pexels.com/photo/aerial-view-of-beach-and-huts-1752461/","photographer":"Damon
+        Hall","photographer_url":"https://www.pexels.com/@damodigital","photographer_id":557149,"avg_color":"#7F8770","src":{"original":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg","large2x":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1752461/pexels-photo-1752461.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Aerial
+        View Of Beach And Huts"},{"id":8534177,"width":4160,"height":6240,"url":"https://www.pexels.com/photo/white-square-box-over-dry-leaves-8534177/","photographer":"Anna
+        Nekrashevich","photographer_url":"https://www.pexels.com/@anna-nekrashevich","photographer_id":10955896,"avg_color":"#E0DFDB","src":{"original":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg","large2x":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/8534177/pexels-photo-8534177.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"White
+        Square Box over Dry Leaves"},{"id":16677628,"width":3999,"height":4999,"url":"https://www.pexels.com/photo/fiji-barberi-clownfish-swimming-by-coral-reef-16677628/","photographer":"Camilo
+        Ospina","photographer_url":"https://www.pexels.com/@pinamon","photographer_id":43969,"avg_color":"#A1674F","src":{"original":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg","large2x":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/16677628/pexels-photo-16677628.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Fiji
+        Barberi Clownfish Swimming by Coral Reef"},{"id":13913457,"width":3931,"height":5896,"url":"https://www.pexels.com/photo/fiji-national-flag-swaying-by-the-wind-13913457/","photographer":"aboodi
+        vesakaran","photographer_url":"https://www.pexels.com/@aboodi","photographer_id":32881629,"avg_color":"#AFC4D5","src":{"original":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg","large2x":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/13913457/pexels-photo-13913457.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Fiji
+        National Flag Swaying by the Wind"},{"id":11434413,"width":2624,"height":3936,"url":"https://www.pexels.com/photo/sea-sunset-beach-vacation-11434413/","photographer":"Asad
+        Photo Maldives","photographer_url":"https://www.pexels.com/@asadphoto","photographer_id":45786,"avg_color":"#9B6D5E","src":{"original":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg","large2x":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/11434413/pexels-photo-11434413.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Palm
+        Tree Near Body of Water during Sunset"},{"id":9656584,"width":5472,"height":3648,"url":"https://www.pexels.com/photo/green-plants-on-beach-during-sunset-9656584/","photographer":"Asad
+        Photo Maldives","photographer_url":"https://www.pexels.com/@asadphoto","photographer_id":45786,"avg_color":"#6C5F59","src":{"original":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg","large2x":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/9656584/pexels-photo-9656584.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Green
+        Plants on Beach during Sunset"},{"id":11434425,"width":5596,"height":3731,"url":"https://www.pexels.com/photo/sea-dawn-sunset-beach-11434425/","photographer":"Asad
+        Photo Maldives","photographer_url":"https://www.pexels.com/@asadphoto","photographer_id":45786,"avg_color":"#716768","src":{"original":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg","large2x":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Palm
+        Trees Near Body of Water during Sunset"},{"id":9482126,"width":5464,"height":3640,"url":"https://www.pexels.com/photo/sea-dawn-landscape-nature-9482126/","photographer":"Asad
+        Photo Maldives","photographer_url":"https://www.pexels.com/@asadphoto","photographer_id":45786,"avg_color":"#907E7A","src":{"original":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg","large2x":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/9482126/pexels-photo-9482126.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Aerial
+        View of Island"},{"id":5194125,"width":3517,"height":3395,"url":"https://www.pexels.com/photo/2-white-framed-photos-on-white-wall-5194125/","photographer":"Brett
+        Jordan","photographer_url":"https://www.pexels.com/@brettjordan","photographer_id":273840,"avg_color":"#C5C0BC","src":{"original":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg","large2x":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/5194125/pexels-photo-5194125.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"2
+        White Framed Photos on White Wall"},{"id":9470519,"width":6720,"height":4480,"url":"https://www.pexels.com/photo/sea-dawn-landscape-nature-9470519/","photographer":"Asad
+        Photo Maldives","photographer_url":"https://www.pexels.com/@asadphoto","photographer_id":45786,"avg_color":"#AE947D","src":{"original":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg","large2x":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/9470519/pexels-photo-9470519.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Couple
+        Standing on White Sand Near Body of Water during Sunset"}],"total_results":25,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=10\u0026query=Fiji"}'
+  recorded_at: Tue, 14 Nov 2023 16:40:17 GMT
+recorded_with: VCR 6.2.0

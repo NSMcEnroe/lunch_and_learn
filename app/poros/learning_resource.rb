@@ -7,14 +7,10 @@ class LearningResource
   end
 
   def parse_photos(picture_data)
-    if picture_data.nil?
-      []
-    else
-      picture_data.map do |photo|
-        { alt_tag: photo[:alt],
-          url: photo[:url]
-        }
-      end
+    picture_data.map do |photo|
+      { alt_tag: photo[:alt],
+        url: photo[:url]
+      }
     end
   end
 

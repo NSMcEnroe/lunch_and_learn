@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=10&query=France
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - B3WRVfuZIH7gShoGi2mkybY76SPK1SntbCwalCsOlMW6vbKKi25dBexn
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 14 Nov 2023 17:07:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8260d9cd7afd5388-DEN
+      Cf-Cache-Status:
+      - HIT
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=86400
+      Etag:
+      - W/"7db7f298697f5363e50f24fca11d99b6"
+      Expires:
+      - Wed, 15 Nov 2023 17:07:27 GMT
+      Access-Control-Allow-Headers:
+      - Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, User-Agent
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '25000'
+      X-Ratelimit-Remaining:
+      - '24995'
+      X-Ratelimit-Reset:
+      - '1702564605'
+      X-Request-Id:
+      - 62b7a2ed-7b41-4995-93ba-3e3ad68d2d67
+      X-Runtime:
+      - '0.090073'
+      X-Server:
+      - bulldog
+      Set-Cookie:
+      - __cf_bm=bv6uMFVOLyzjgyg9QVpxKfS_Wz0bXOdCGMl1S1ac1NU-1699981647-0-ATD88/qXPFEzHfy/sRW4j7/BfK/K0KixsRlKS+E1B02L8zAPNkPrvLkCEA9OLjvztanUwmrBtOePdBr0y+L+iHg=;
+        path=/; expires=Tue, 14-Nov-23 17:37:27 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":10,"photos":[{"id":2363,"width":1600,"height":1066,"url":"https://www.pexels.com/photo/clear-glass-museum-during-golden-hour-2363/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#8E5F38","src":{"original":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg","large2x":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Clear
+        Glass Museum during Golden Hour"},{"id":699466,"width":3024,"height":4032,"url":"https://www.pexels.com/photo/low-angle-photo-of-eiffel-tower-699466/","photographer":"Flo
+        Dahm","photographer_url":"https://www.pexels.com/@flodahm","photographer_id":154317,"avg_color":"#2F3044","src":{"original":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg","large2x":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Low
+        Angle Photo of Eiffel Tower"},{"id":2272939,"width":5304,"height":7072,"url":"https://www.pexels.com/photo/france-flag-on-gray-concrete-building-near-road-2272939/","photographer":"Matt
+        Hardy","photographer_url":"https://www.pexels.com/@matthardy","photographer_id":372053,"avg_color":"#81746E","src":{"original":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg","large2x":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"France
+        Flag on Gray Concrete Building Near Road"},{"id":548077,"width":2592,"height":3888,"url":"https://www.pexels.com/photo/galeries-lafayette-building-548077/","photographer":"Margerretta","photographer_url":"https://www.pexels.com/@margerretta","photographer_id":157232,"avg_color":"#949184","src":{"original":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg","large2x":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Galeries
+        Lafayette Building"},{"id":161901,"width":2371,"height":1536,"url":"https://www.pexels.com/photo/crowded-street-with-cars-along-arc-de-triomphe-161901/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#5F4B48","src":{"original":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg","large2x":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Crowded
+        Street With Cars Along Arc De Triomphe"},{"id":532826,"width":5184,"height":3456,"url":"https://www.pexels.com/photo/architecture-blue-sky-city-cityscape-532826/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#4373A2","src":{"original":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg","large2x":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Eiffel
+        Tower, Paris"},{"id":1694359,"width":5152,"height":3864,"url":"https://www.pexels.com/photo/photo-of-town-1694359/","photographer":"Niki
+        Nagy","photographer_url":"https://www.pexels.com/@stuthnagyniki","photographer_id":187797,"avg_color":"#B2AC9F","src":{"original":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg","large2x":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1694359/pexels-photo-1694359.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photo
+        Of Town"},{"id":2135,"width":1200,"height":1600,"url":"https://www.pexels.com/photo/food-france-morning-breakfast-2135/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#A37439","src":{"original":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg","large2x":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Bunch
+        of Croissant"},{"id":34223,"width":4912,"height":3264,"url":"https://www.pexels.com/photo/france-landmark-water-clouds-34223/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#656E87","src":{"original":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg","large2x":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/34223/mont-saint-michel-france-normandy-europe.jpg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Brown
+        Castle"},{"id":1530259,"width":4160,"height":6240,"url":"https://www.pexels.com/photo/low-angle-photo-of-eiffel-tower-1530259/","photographer":"Louis","photographer_url":"https://www.pexels.com/@suissounet","photographer_id":465924,"avg_color":"#6D9EA7","src":{"original":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg","large2x":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Low
+        Angle Photo of Eiffel Tower"}],"total_results":5386,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=10\u0026query=France"}'
+  recorded_at: Tue, 14 Nov 2023 17:07:27 GMT
+recorded_with: VCR 6.2.0

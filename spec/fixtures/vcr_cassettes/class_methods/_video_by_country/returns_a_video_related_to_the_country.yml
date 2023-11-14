@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyDUtELRkTKSwVkdd6fMLEJC_Zh-VdxojBg&maxResults=1&part=snippet&q=France&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 14 Nov 2023 16:59:57 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "u6RU2DKGRZRjLxRq8i7qIjZRGRs",
+          "nextPageToken": "CAEQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 138,
+            "resultsPerPage": 1
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "B34keDHDX0ioo-dQmV8qxe1lO8Q",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "I22A32uBvRo"
+              },
+              "snippet": {
+                "publishedAt": "2020-07-18T20:23:35Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of France",
+                "description": "Sources: A History of France (2018) by John Julius Norwich. Atlantic Monthly Press, New York. A Concise History of France (2005) ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/I22A32uBvRo/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/I22A32uBvRo/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/I22A32uBvRo/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-07-18T20:23:35Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Tue, 14 Nov 2023 16:59:57 GMT
+recorded_with: VCR 6.2.0
