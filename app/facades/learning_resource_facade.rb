@@ -3,10 +3,10 @@ class LearningResourcesFacade
     @country = country
   end
 
-  def selected_learning_resoruces
-    data = LearningResourceService.new....
+  def selected_video_resource
+    data = LearningResourceService.new.video_by_country(@country)
 
-    data[:hits].map do....
+    LearningResource.new(data[:items], @country)
     end
   end
 end

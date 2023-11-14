@@ -5,14 +5,16 @@ class VideoService
   end
 
   def conn
-    Faraday.new(url: 'https://api.edamam.com/') do |faraday|
-      faraday.params['app_id'] = "0c1af2a7"
-      faraday.params['type'] = "public"
-      faraday.params['app_key'] = Rails.application.credentials.edamam[:key]
+    Faraday.new(url: 'https://youtube.googleapis.com') do |faraday|
+      faraday.params['key'] = Rails.application.credentials.youtube[:key]
+      faraday.params['part'] = 'snippet'
+      faraday.params['channelId'] = 'UCluQ5yInbeAkkeCndNnUhpw'
+      faraday.params['maxResults'] = 1
+      faraday.params['type'] = 'video'
     end
   end
 
-  def recipes_by_country(country)
-    get_url("api/recipes/v2?q=#{country}")
+  def video_by_country(country)
+    get_url("/youtube/v3/search?q=#{country}")
   end
 end
