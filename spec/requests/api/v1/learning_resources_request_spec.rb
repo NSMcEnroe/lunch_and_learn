@@ -25,9 +25,14 @@ RSpec.describe "Get Learning Resources for a Country", type: :request do
     expect(json_data[:attributes][:video][:title]).to be_a(String)
     expect(json_data[:attributes][:video][:youtube_video_id]).to be_a(String)
 
-    expect(json_data[:attributes]).to have_key(:images)
-    expect(json_data[:attributes][:images][:alt_tag]).to be_a(String, count: 10)
-    expect(json_data[:attributes][:images][:url]).to be_a(String, count: 10)
+    expect(json_data[:attributes][:images]).to be_an(Array)
+    expect(json_data[:attributes][:images].length).to eq(10)
+
+    json_data[:attributes][:images].each do |image|
+      expect(image[:alt_tag]).to be_a(String)
+      expect(image[:url]).to be_a(String)
+    end
+
 
       # expect(recipe[:attributes]).to_not have_key :yield
       # expect(recipe[:attributes]).to_not have_key :ingredients

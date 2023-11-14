@@ -1,17 +1,23 @@
 class LearningResource
-  attr_reader :title, :youtube_video_id, :country, :images
+  attr_reader :video, :country, :images
   def initialize(video_data, picture_data, country)
-    @title = data[:snippet][:title]
-    @youtube_video_id = data[:id][:videoId]
     @country = country
+    @video = parse_video_info(video_data)
     @images = parse_photos(picture_data)
   end
 
-  def parse(picture_data)
+  def parse_photos(picture_data)
     picture_data.map do |photo|
       { alt_tag: photo[:alt],
-        url: => photo[:url]
+        url: photo[:url]
       }
     end
+  end
+
+  def parse_video_info(video_data)
+    {
+      title: video_data[:snippet][:title],
+      youtube_video_id: video_data[:id][:videoId]
+    }
   end
 end
