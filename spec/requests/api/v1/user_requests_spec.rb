@@ -30,6 +30,38 @@ require "rails_helper"
       expect(saved_user_data[:attributes]).to have_key :api_key
       expect(saved_user_data[:attributes][:api_key]).to be_a(String)
     end 
+
+    it "returns an error if email has already been used", :vcr do
+      user_info = {
+        "name": "Odell",
+        "email": "goodboy@ruffruff.com",
+        "password": "treats4lyf",
+        "password_confirmation": "treats4lyf"
+      }
+
+      post "/api/v1/users", params: user_info, as: :json 
+
+      post "/api/v1/users", params: user_info, as: :json 
+
+      expect(response.status).to eq(400)
+
+      expect(response.body).to eq("{\"errors\":\"Email has already been taken\"}")
+    end 
+
+    it "returns an error if passwords do not match", :vcr do
+      user_info = {
+        "name": "Odell",
+        "email": "goodboy@ruffruff.com",
+        "password": "treats4lyf",
+        "password_confirmation": "treats4lf"
+      }
+
+      post "/api/v1/users", params: user_info, as: :json 
+
+      expect(response.status).to eq(400)
+
+      expect(response.body).to eq("{\"errors\":\"Password confirmation doesn't match Password\"}")
+    end 
   end
 
 
