@@ -4,9 +4,10 @@ class LearningResourcesFacade
   end
 
   def selected_video_resource
-    data = LearningResourceService.new.video_by_country(@country)
+    video_data = VideoService.new.video_by_country(@country)
+    pictures_data = PicturesService.new...
 
-    LearningResource.new(data[:items], @country)
+    LearningResource.new(video_data[:items], @country)
     end
   end
 end
