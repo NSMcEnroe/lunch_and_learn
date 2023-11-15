@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :favorites
+  
   before_create :generate_api_key
 
   validates :name, presence: true
