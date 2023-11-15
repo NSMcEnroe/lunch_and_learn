@@ -3,7 +3,9 @@ require 'rails_helper'
 describe CountryService do
   context "class methods" do
     context "#recipes_by_country" do
-      xit "returns recipes related to the country", :vcr do
+      it "returns recipes related to the country", :vcr do
+        allow_any_instance_of(CountryService).to receive(:random_country).and_return([{name:{common: "France" }}])
+
         random_country = CountryService.new.random_country.sample[:name][:common].downcase
 
         expect(random_country).to be_a(String)

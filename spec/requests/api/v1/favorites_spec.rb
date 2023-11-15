@@ -122,4 +122,51 @@ describe "Favorites Database" do
     expect(egypt_recipe[:attributes]).to have_key :created_at
     expect(egypt_recipe[:attributes][:created_at]).to be_a(String)
   end
+
+  it "can return an empty array when no favorites have been saved", :vcr do
+    user_info = {
+      "name": "Odell",
+      "email": "goodboy@ruffruff.com",
+      "password": "treats4lyf",
+      "password_confirmation": "treats4lyf"
+    }
+
+    post "/api/v1/users", params: user_info, as: :json 
+
+    get "/api/v1/favorites?api_key=#{User.last.api_key}"
+
+    expect(response.status).to eq(200)
+
+    empty_response = JSON.parse(response.body, symbolize_names: true)
+
+    expect(empty_response[:data]).to eq([])
+  end
+
+  it "returns an error if the api key does not match when accessing favorites", :vcr do
+    user_info = {
+      "name": "Odell",
+      "email": "goodboy@ruffruff.com",
+      "password": "treats4lyf",
+      "password_confirmation": "treats4lyf"
+    }
+
+    post "/api/v1/users", params: user_info, as: :json 
+
+    saved_recipe = {
+      api_key: User.last.api_key,
+      country:"egypt",
+      recipe_link: "https://www.thekitchn.com/recipe-egyptian-tomato-soup-weeknight-dinner-recipes-from-the-kitchn-123308",
+      recipe_title: "Recipe: Egyptian Tomato Soup"
+    }
+
+    post "/api/v1/favorites", params: saved_recipe, as: :json 
+
+    expect(response.status).to eq(201)
+
+    get "/api/v1/favorites?api_key=hello"
+
+    expect(response.status).to eq(401)
+
+    expect(response.body).to eq("{\"errors\":\"User is unauthorized\"}")
+  end
 end
