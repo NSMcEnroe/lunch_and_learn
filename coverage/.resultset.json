@@ -256,11 +256,51 @@
           null
         ]
       },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/models/favorite_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/models/favorite.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
           1,
+          null,
+          1,
+          2,
+          null,
+          null,
           1,
           2,
           2,
@@ -291,15 +331,8 @@
           1,
           null,
           1,
-          7,
+          8,
           null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
           null
         ]
       },
@@ -444,6 +477,29 @@
           1,
           1,
           null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
           null,
           null
         ]
@@ -966,10 +1022,10 @@
         "lines": [
           1,
           1,
-          7,
+          8,
           null,
-          7,
-          5,
+          8,
+          6,
           null,
           2,
           null,
@@ -978,7 +1034,7 @@
           1,
           null,
           1,
-          7,
+          8,
           null,
           null
         ]
@@ -1002,32 +1058,21 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/nicholasmcenroe/turing_work/3mod/projects/final_project/lunch_and_learn/app/models/favorite.rb": {
-        "lines": [
+          2,
           1,
           1,
           null,
           1,
+          null,
+          null,
+          null,
+          1,
+          null,
           1,
           1,
+          null,
           null
         ]
       },
@@ -1089,6 +1134,6 @@
         ]
       }
     },
-    "timestamp": 1700019410
+    "timestamp": 1700021209
   }
 }

@@ -32,6 +32,29 @@ describe "Favorites Database" do
     expect(thailand_recipe.country).to eq("thailand")
     expect(thailand_recipe.recipe_link).to eq("https://www.tastingtable.com/entry_detail/chefs_recipes/12214/Fried_rice_with_a_welcome_addition.htm")
     expect(thailand_recipe.recipe_title).to eq("Crab Fried Rice (Khaao Pad Bpu)")
+  end
 
+  it "can reject the user if the API key is invalid", :vcr do
+    user_info = {
+      "name": "Odell",
+      "email": "goodboy@ruffruff.com",
+      "password": "treats4lyf",
+      "password_confirmation": "treats4lyf"
+    }
+
+    post "/api/v1/users", params: user_info, as: :json 
+
+    saved_recipe = {
+      api_key: "that aint it chief",
+      country:"thailand",
+      recipe_link: "https://www.tastingtable.com/entry_detail/chefs_recipes/12214/Fried_rice_with_a_welcome_addition.htm",
+      recipe_title: "Crab Fried Rice (Khaao Pad Bpu)"
+    }
+
+    post "/api/v1/favorites", params: saved_recipe, as: :json 
+
+    expect(response.status).to eq(401)
+
+    expect(response.body).to eq("{\"errors\":\"User is unauthorized\"}")
   end
 end
